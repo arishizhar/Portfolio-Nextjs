@@ -126,20 +126,41 @@ export default function Home() {
     //   backgroundColor="#0b0f10" // Jet color
     //   spotlightSize={600} // Larger spotlight for better effect
     // >
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="group relative z-10 max-w-xs rounded-xl p-6 text-center transition-all duration-300">
-        <h2 className="mb-2 text-xl font-bold text-sky-400">My Portfolio</h2>
-        <p className="mb-3 text-sm text-sky-200">Welcome to my work</p>
-        <div className="flex flex-wrap justify-center gap-2">
-          <span className="rounded-full bg-sky-400/20 px-4 py-1 text-sm font-medium text-sky-100 backdrop-blur-sm">
-            React
-          </span>
-          <span className="rounded-full bg-sky-400/20 px-4 py-1 text-sm font-medium text-sky-100 backdrop-blur-sm">
-            Tailwind
-          </span>
+
+    <>
+      {/* Main overall div container */}
+      <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-12 lg:py-0">
+        {/* div that contains the hero and main content section */}
+        <div className="lg:flex lg:justify-between lg:gap-4">
+          {/* Header with the name position location logos and resume and nav in order */}
+          <header className="lg:sticky lg:top-0 lg:flex lg:flex-col lg:max-h-screen lg:w-[48%] lg:justify-between lg:py-24">
+            <div>
+              <h1 className="text-5xl font-bold text-slate-200 sm:text-6xl tracking-tight">
+                Arish Izhar
+              </h1>
+
+              <h2 className="mt-3 text-xl font-medium tracking-tight text-slate-200 sm:text-2xl">
+                Full Stack Engineer
+              </h2>
+            </div>
+          </header>
         </div>
       </div>
-    </div>
+      {/* <div className="flex items-center justify-center min-h-screen">
+        <div className="group relative z-10 max-w-xs rounded-xl p-6 text-center transition-all duration-300">
+          <h2 className="mb-2 text-xl font-bold text-sky-400">My Portfolio</h2>
+          <p className="mb-3 text-sm text-sky-200">Welcome to my work</p>
+          <div className="flex flex-wrap justify-center gap-2">
+            <span className="rounded-full bg-sky-400/20 px-4 py-1 text-sm font-medium text-sky-100 backdrop-blur-sm">
+              React
+            </span>
+            <span className="rounded-full bg-sky-400/20 px-4 py-1 text-sm font-medium text-sky-100 backdrop-blur-sm">
+              Tailwind
+            </span>
+          </div>
+        </div>
+      </div> */}
+    </>
     // </Spotlight>
   );
 }
