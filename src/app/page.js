@@ -119,6 +119,16 @@
 //   );
 // }
 
+import {
+  MapPin,
+  MapPinned,
+  Mail,
+  Linkedin,
+  Github,
+  Download,
+  ExternalLink,
+} from "lucide-react";
+
 export default function Home() {
   return (
     // <Spotlight
@@ -142,7 +152,73 @@ export default function Home() {
               <h2 className="mt-3 text-xl font-medium tracking-tight text-slate-200 sm:text-2xl">
                 Full Stack Engineer
               </h2>
+              {/* Location and pin icon  */}
+              <div className="mt-2 flex items-center gap-2 text-slate-400 text-lg">
+                <MapPin className="w-6 h-6 text-slate-400" />
+                <span className="text-xl font-medium tracking-tight text-slate-400 sm:text-lg">
+                  ON, Canada
+                </span>
+              </div>
             </div>
+
+            {/* Logos and socials */}
+            <ul
+              className="ml-1 mt-10 flex items-center gap-6"
+              aria-label="Social Media"
+            >
+              <li>
+                <a
+                  href="mailto:youremail@example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Email"
+                >
+                  <Mail className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <Github className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Resume"
+                >
+                  <Download className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:youremail@example.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Email"
+                  title="Email"
+                  className="block rounded-2xl bg-slate-400 p-1 transition-colors hover:bg-slate-100"
+                >
+                  <Mail className="w-6 h-6 text-slate-800" />
+                </a>
+              </li>
+            </ul>
           </header>
         </div>
       </div>
@@ -161,6 +237,6 @@ export default function Home() {
         </div>
       </div> */}
     </>
-    // </Spotlight>
+    //  </Spotlight>
   );
 }
