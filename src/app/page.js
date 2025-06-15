@@ -129,6 +129,8 @@ import {
   ExternalLink,
 } from "lucide-react";
 
+import About from "./components/About";
+
 export default function Home() {
   return (
     // <Spotlight
@@ -159,67 +161,72 @@ export default function Home() {
                   ON, Canada
                 </span>
               </div>
+              <div>
+                {/* Logos and socials */}
+                <ul
+                  className="ml-1 mt-10 flex items-center gap-6"
+                  aria-label="Social Media"
+                >
+                  <li>
+                    <a
+                      href="mailto:youremail@example.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Email"
+                    >
+                      <Mail className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/yourusername"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub"
+                    >
+                      <Github className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/yourusername"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                    >
+                      <Linkedin className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Resume"
+                    >
+                      <Download className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:youremail@example.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Email"
+                      title="Email"
+                      className="block rounded-2xl bg-slate-400 p-1 transition-colors hover:bg-slate-100"
+                    >
+                      <Mail className="w-6 h-6 text-slate-800" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            {/* Logos and socials */}
-            <ul
-              className="ml-1 mt-10 flex items-center gap-6"
-              aria-label="Social Media"
-            >
-              <li>
-                <a
-                  href="mailto:youremail@example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Email"
-                >
-                  <Mail className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/yourusername"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                >
-                  <Github className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/yourusername"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Resume"
-                >
-                  <Download className="w-6 h-6 text-slate-400 hover:text-slate-100 transition-colors" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:youremail@example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Email"
-                  title="Email"
-                  className="block rounded-2xl bg-slate-400 p-1 transition-colors hover:bg-slate-100"
-                >
-                  <Mail className="w-6 h-6 text-slate-800" />
-                </a>
-              </li>
-            </ul>
           </header>
+
+          <main id="content" className="pt-24 lg:w-[52%] lg:py-24">
+            <About />
+          </main>
         </div>
       </div>
       {/* <div className="flex items-center justify-center min-h-screen">
